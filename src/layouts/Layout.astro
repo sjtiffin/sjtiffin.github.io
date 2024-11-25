@@ -1,0 +1,23 @@
+---
+import Navbar from "../components/Navbar.astro";
+
+interface Props {
+  title: string;
+  theme?: string;
+}
+
+const { title, theme = "night" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" data-theme={theme}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Navbar />
+  </body>
+</html>

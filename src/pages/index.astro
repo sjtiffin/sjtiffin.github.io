@@ -1,16 +1,61 @@
 ---
-
+import Layout from "../layouts/Layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="sjtiffin.github.io" theme="night" />
+
+<div class="card bg-base max-w-full mx-8 md:mx-16 lg:mx-32 my-4">
+  <div class="card-body">
+    <p>
+      Hey there, and welcome to my site-blog-portfolio-thing. I'm a software
+      developer currently living in Little Rock, Arkansas with my husband and
+      our kitty and doggies.
+    </p>
+  </div>
+</div>
+<div class="divider mx-4 my-0" hidden="true"></div>
+<div
+  class="card bg-base max-w-full mx-8 md:mx-16 lg:mx-32 my-4 grid grid-cols-2"
+>
+  <div class="card-body">
+    <h2 class="card-title">Skills</h2>
+    <ul class="list-disc list-inside col-start-1">
+      Frontend
+      <li>Go</li>
+      <li>HTML/CSS</li>
+      <li>JavaScript/TypeScript</li>
+      <li>Vue, Astro, React</li>
+    </ul>
+    <ul class="list-disc list-inside col-start-2">
+      <li>Stuff</li>
+    </ul>
+  </div>
+</div>
+<div class="divider mx-4 my-0"></div>
+<div class="card bg-base max-w-full mx-8 md:mx-16 lg:mx-32 my-4">
+  <div class="card-body">
+    <h2 class="card-title">Experience</h2>
+    <ul>
+      <li>asdf</li>
+    </ul>
+  </div>
+</div>
+<div class="divider mx-4 my-0"></div>
+<div class="card bg-base max-w-full mx-8 md:mx-16 lg:mx-32 my-4">
+  <div class="card-body">
+    <h2 class="card-title">Education</h2>
+    <h3>University of Arkansas at Little Rock</h3>
+    <p>B.S., Computer Science</p>
+  </div>
+</div>
+<div class="divider mx-4 my-0"></div>
+<div class="card bg-base max-w-full mx-32 my-4">
+  <div class="card-body">
+    <h2 class="card-title">Projects</h2>
+    <a
+      class="link"
+      href="https://github.com/sjtiffin/sjtiffin.github.io"
+      target="_blank">This Website</a
+    >
+  </div>
+</div>
